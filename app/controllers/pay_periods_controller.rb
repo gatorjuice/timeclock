@@ -19,6 +19,10 @@ class PayPeriodsController < ApplicationController
     end
   end
 
+  def show
+    @punches = PayPeriod.find(params[:id]).punches
+  end
+
   private
 
   def pay_period_params
