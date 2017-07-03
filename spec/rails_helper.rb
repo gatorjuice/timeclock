@@ -29,7 +29,7 @@ require 'devise'
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
-  config.include Devise::Test::ControllerHelpers
+  config.include Devise::Test::IntegrationHelpers
 
   config.include FactoryGirl::Syntax::Methods
 

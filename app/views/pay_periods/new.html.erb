@@ -1,0 +1,7 @@
+<%= form_for @pay_period do |f| %>
+  <%= f.label :starting %>
+  <%= f.date_field :starting %>
+  <%= f.label :ending %>
+  <%= f.date_field :ending %>
+  <%= f.submit %>
+<% end %>
